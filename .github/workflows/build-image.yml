@@ -36,6 +36,6 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ inputs.nebula_version }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/nebula:${{ inputs.nebula_version }}
           build-args: |
             NEBULA_VERSION=${{ inputs.nebula_version }}
