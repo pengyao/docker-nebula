@@ -1,1 +1,1 @@
-nebula "$@"
+exec "$@"
